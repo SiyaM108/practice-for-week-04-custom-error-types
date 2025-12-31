@@ -10,6 +10,8 @@ class MaximumLengthExceededError extends ValidationError {
 
     super(message);
     this.name = "MaximumLengthExceededError";
+
+    Error.captureStackTrace(this, MaximumLengthExceededError);
   }
 }
 
